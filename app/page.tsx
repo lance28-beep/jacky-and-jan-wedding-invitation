@@ -23,6 +23,7 @@ import RSVPForm from "@/components/rsvp-form"
 import { useIsMobile } from "@/components/ui/use-mobile"
 import QRCode from "@/components/qr-code"
 import ShareButtons from "@/components/share-buttons"
+import FAQ from "@/components/faq"
 
 interface Message {
   timestamp: string
@@ -1132,63 +1133,9 @@ export default function WeddingInvitation() {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="py-24 bg-gradient-to-br from-beige/20 to-gold/10">
+        <section id="faq" className="py-16 relative">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <Badge variant="outline" className="border-burgundy text-burgundy mb-4">
-                Questions & Answers
-              </Badge>
-              <h2 className="font-serif text-4xl md:text-6xl text-burgundy mb-6">FAQ</h2>
-              <p className="text-wine/80 text-xl max-w-2xl mx-auto leading-relaxed">
-                Everything you need to know about our special day. Can't find what you're looking for? Feel free to
-                reach out!
-              </p>
-            </div>
-
-            <div className="max-w-4xl mx-auto space-y-6">
-              {[
-                {
-                  question: "What should I wear?",
-                  answer:
-                    "For guests: Filipiniana or long dress for ladies, Barong or Polo for gentlemen. For the entourage: Strictly formal - Filipiniana for ladies, Barong & Black Slacks for gentlemen. Principal sponsors should wear formal attire.",
-                },
-                {
-                  question: "Will there be parking available?",
-                  answer:
-                    "Yes! Nature's Village Resort offers parking facilities. Please arrive a few minutes early to allow time for parking and finding your seats.",
-                },
-                {
-                  question: "What time should I arrive?",
-                  answer:
-                    "The ceremony begins at 4:00 PM on December 10, 2025. Please arrive 15-20 minutes early to find your seats and enjoy the pre-ceremony atmosphere.",
-                },
-                {
-                  question: "Can I bring a plus-one?",
-                  answer:
-                    "Due to venue capacity, we can only accommodate guests specifically named on your invitation. Thank you for understanding! If you have questions about your invitation, please contact us at 09165305160.",
-                },
-                {
-                  question: "When is the RSVP deadline?",
-                  answer:
-                    "Please confirm your attendance by November 15, 2025. You can RSVP through this website or contact us directly at 09165305160.",
-                },
-                {
-                  question: "Where is the venue located?",
-                  answer:
-                    "Nature's Village Resort is located at Talisay Highway, Metro Bacolod, 6115 Negros Occidental. Both the ceremony and reception will be held at the same venue.",
-                },
-              ].map((faq, index) => (
-                <Card
-                  key={index}
-                  className="border-2 border-gold/20 shadow-lg bg-white/90 backdrop-blur-sm hover:shadow-xl transition-all duration-300"
-                >
-                  <CardContent className="pt-8">
-                    <h3 className="font-semibold text-burgundy mb-4 text-xl">{faq.question}</h3>
-                    <p className="text-wine/80 text-lg leading-relaxed">{faq.answer}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <FAQ />
           </div>
         </section>
 
