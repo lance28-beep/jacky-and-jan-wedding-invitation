@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/couple_image/image_3.png',
         width: 1200,
         height: 630,
         alt: 'Jackey & Jan Wedding Invitation',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Jackey & Jan - Wedding Invitation',
     description: 'Join us in celebrating the wedding of Jackey & Jan on December 10, 2025 at Nature\'s Village Resort, Bacolod City.',
-    images: ['/og-image.jpg'],
+    images: ['/couple_image/image_3.png'],
     creator: '@jackandjan',
   },
   robots: {

@@ -897,6 +897,13 @@ export default function WeddingInvitation() {
                         <h4 className="font-semibold text-burgundy text-lg">Felomina Dela Torre Kusakari</h4>
                         <p className="text-wine/70">Mother</p>
                       </div>
+                      <div className="flex flex-col items-center">
+                        <div className="w-16 h-16 bg-gradient-to-br from-burgundy to-wine rounded-full flex items-center justify-center mb-4">
+                            <span className="text-white font-serif text-xl">L</span>
+                          </div>
+                          <h4 className="font-semibold text-burgundy text-lg">Lanie Aynaga</h4>
+                          <p className="text-wine/70">Auntie</p>
+                      </div>
                     </CardContent>
                   </Card>
                 {/* Groom's Parents */}
@@ -937,7 +944,7 @@ export default function WeddingInvitation() {
                         <h4 className="font-semibold text-burgundy text-base">Innah Nepomuceno Piorque</h4>
                         <p className="text-wine/70 text-sm">Maid of Honor</p>
                         </div>
-                      {["Kathleen Faye Balo", "Hazel Ruth Abraham", "Rona Gamboa"].map((name, idx) => (
+                      {["Kathleen Faye Balo", "Hazel Ruth Abraham"].map((name, idx) => (
                         <div key={idx} className="flex flex-col items-center">
                           <div className="w-14 h-14 bg-gradient-to-br from-burgundy to-wine rounded-full flex items-center justify-center mb-3">
                             <span className="text-white font-serif text-lg">{name.split(" ").map((n) => n[0]).join("")}</span>
@@ -961,7 +968,7 @@ export default function WeddingInvitation() {
                         <h4 className="font-semibold text-burgundy text-base">Frank Niel Alabarta</h4>
                         <p className="text-wine/70 text-sm">Best Man</p>
                 </div>
-                      {["Lariel Aynaga", "Nelsen John Pudadera", "Christian Bernard Dormido", "Ace Mark Hechanova", "Ariel Remegio Jr.", "Mhiko Catacata", "Janro Pahilangga", "Daniel Charles Velayo"].map((name, idx) => (
+                      {["Lariel Aynaga", "Nelsen John Pudadera", "Christian Bernard Dormido", "Ace Mark Hechanova", "Ariel Remegio Jr.", "Mhiko Catacata", "Janro Pahilangga", "Daniel Charles Velayo","Daniel Pahilanga”"].map((name, idx) => (
                         <div key={idx} className="flex flex-col items-center">
                           <div className="w-14 h-14 bg-gradient-to-br from-burgundy to-wine rounded-full flex items-center justify-center mb-3">
                             <span className="text-white font-serif text-lg">{name.split(" ").map((n) => n[0]).join("")}</span>
@@ -979,7 +986,7 @@ export default function WeddingInvitation() {
               <div>
                 <h3 className="font-serif text-2xl text-burgundy mb-8 text-center">Principal Sponsors</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                  {["Jeanie Velayo", "Teresa Nepomuceno", "Engr. Joenil Lavadia", "Femy Delator", "Tara Talafer", "Ariel Amedo", "Gemma De los Santos", "Dra. Gladys Pailano Tan", "Marivic Dormido", "Bryan Amaporado", "Lynee Penaflor", "Engr. Leo Pahilanga", "Rene Pailano", "Julie Peruelo", "Sampaguita Repique", "Margarita Gonschorek", "Daisy Carmona", "Erica Escanuela", "Connie Franco Gallego", "Bonifacio Alvarez Jr.", "Engr. Jeffrey Alvarez"].map((name, idx) => (
+                  {["Jeanie Velayo", "Teresa Nepomuceno", "Engr. Joenil Lavadia", "Femy Delator", "Tara Talafer", "Ariel Amedo", "Gemma De los Santos", "Dra. Gladys Pailano Tan", "Marivic Dormido", "Bryan Amaporado", "Lynee Penaflor", "Engr. Leo Pahilanga", "Rene Pailano", "Julie Peruelo", "Sampaguita Repique", "Margarita Gonschorek", "Daisy Carmona", "Edwin Escanuela", "Connie Franco Gallego", "Bonifacio Alvarez Jr.", "Engr. Jeffrey Alvarez"].map((name, idx) => (
                     <div key={idx} className="flex flex-col items-center bg-white/90 rounded-xl border border-gold/20 shadow hover:shadow-lg transition-all duration-200 py-4 px-2">
                       <div className="w-10 h-10 bg-gradient-to-br from-gold to-beige rounded-full flex items-center justify-center mb-2">
                         <span className="text-burgundy font-serif text-xs">{name.split(" ").map((n) => n[0]).join("")}</span>
@@ -1087,37 +1094,30 @@ export default function WeddingInvitation() {
               </Badge>
               <h2 className="font-serif text-4xl md:text-6xl text-burgundy mb-6">Gift Registry</h2>
               <p className="text-wine/80 text-xl max-w-2xl mx-auto leading-relaxed">
-                Your presence is the greatest gift, but if you wish to honor us with something special, here are our
-                registries.
+                Your presence is the greatest gift, but if you wish to honor us with something special, we prefer monetary gifts.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {[
-                { store: "Williams Sonoma", icon: Gift, color: "from-burgundy to-wine" },
-                { store: "Crate & Barrel", icon: Gift, color: "from-wine to-burgundy" },
-                { store: "Amazon", icon: Gift, color: "from-gold to-beige" },
-              ].map((registry, index) => (
-                <Card
-                  key={index}
-                  className="border-2 border-gold/20 hover:shadow-2xl transition-all duration-300 transform hover:scale-105 bg-white/90 backdrop-blur-sm"
-                >
-                  <CardContent className="pt-8 text-center">
-                    <div
-                      className={`w-20 h-20 bg-gradient-to-br ${registry.color} rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl`}
-                    >
-                      <registry.icon className="h-10 w-10 text-white" />
-                    </div>
-                    <h3 className="font-semibold text-burgundy mb-4 text-xl">{registry.store}</h3>
-                    <Button
-                      variant="outline"
-                      className="border-2 border-burgundy text-burgundy hover:bg-burgundy hover:text-white rounded-xl px-6 py-3 font-medium"
-                    >
-                      View Registry
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="max-w-md mx-auto">
+              <Card className="border-2 border-gold/20 hover:shadow-2xl transition-all duration-300 transform hover:scale-105 bg-white/90 backdrop-blur-sm">
+                <CardContent className="pt-8 text-center">
+                  <div className="w-20 h-20 bg-gradient-to-br from-gold to-beige rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
+                    <Gift className="h-10 w-10 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-burgundy mb-4 text-xl">Monetary Gift</h3>
+                  <p className="text-wine/80 mb-6">We prefer monetary gifts to help us start our new life together.</p>
+                  <div className="relative w-48 h-48 mx-auto mb-6">
+                    <Image
+                      src="/gcash.png"
+                      alt="GCash QR Code"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm text-wine/70 mb-4">Scan the QR code to send your gift via GCash</p>
+                  <p className="text-xs text-wine/50 mt-6">© 2024 Jackey & Jan. All rights reserved.</p>
+                </CardContent>
+              </Card>
             </div>
 
             <div className="text-center mt-12">
