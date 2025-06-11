@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Great_Vibes, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { Toaster } from '@/components/ui/sonner'
+import BackgroundMusic from '@/components/BackgroundMusic'
 
 const inter = Inter({ subsets: ['latin'] })
 const greatVibes = Great_Vibes({ weight: '400', subsets: ['latin'], variable: '--font-great-vibes' })
@@ -89,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${greatVibes.variable} ${playfairDisplay.variable}`}>
+        <BackgroundMusic />
         {children}
         <Toaster />
       </body>
