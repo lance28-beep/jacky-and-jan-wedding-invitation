@@ -1148,7 +1148,7 @@ export default function WeddingInvitation() {
               </Badge>
               <h2 className="font-serif text-4xl md:text-6xl text-burgundy mb-6">Share Your Moments</h2>
               <p className="text-wine/80 text-xl max-w-2xl mx-auto leading-relaxed">
-                Help us document our special day by sharing your captured moments using our official hashtag
+              Let’s make memories together! Share your photos and videos from our celebration using our official hashtag so we can cherish them forever.
               </p>
               <div className="mt-6 flex flex-col items-center justify-center">
                 <span className="inline-block bg-burgundy/10 text-burgundy font-bold text-2xl md:text-3xl px-6 py-2 rounded-full tracking-wide mb-2">
