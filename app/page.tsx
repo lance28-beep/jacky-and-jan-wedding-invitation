@@ -38,6 +38,51 @@ export default function WeddingInvitation() {
   const [activeSection, setActiveSection] = useState("home")
   const isMobile = useIsMobile()
 
+  // Prenup gallery items sourced from public/Prenup_Gallery
+  const prenupGalleryItems = [
+    { image: "/Prenup_Gallery/image_1.png", text: "" },
+    { image: "/Prenup_Gallery/image_3.png", text: "" },
+    { image: "/Prenup_Gallery/image_4.png", text: "" },
+    { image: "/Prenup_Gallery/image_5.png", text: "" },
+    { image: "/Prenup_Gallery/image_6.png", text: "" },
+    { image: "/Prenup_Gallery/image_7.png", text: "" },
+    { image: "/Prenup_Gallery/image_8.png", text: "" },
+    { image: "/Prenup_Gallery/image_9.png", text: "" },
+    { image: "/Prenup_Gallery/image_10.png", text: "" },
+    { image: "/Prenup_Gallery/image_11.png", text: "" },
+    { image: "/Prenup_Gallery/image_12.png", text: "" },
+    { image: "/Prenup_Gallery/image_13.png", text: "" },
+    { image: "/Prenup_Gallery/image_14.png", text: "" },
+    { image: "/Prenup_Gallery/image_15.png", text: "" },
+    { image: "/Prenup_Gallery/image_16.png", text: "" },
+    { image: "/Prenup_Gallery/image_17.png", text: "" },
+    { image: "/Prenup_Gallery/image_18.png", text: "" },
+    { image: "/Prenup_Gallery/image_19.png", text: "" },
+    { image: "/Prenup_Gallery/image_20.png", text: "" },
+    { image: "/Prenup_Gallery/image_21.png", text: "" },
+    { image: "/Prenup_Gallery/image_22.png", text: "" },
+    { image: "/Prenup_Gallery/image_23.png", text: "" },
+    { image: "/Prenup_Gallery/image_24.png", text: "" },
+    { image: "/Prenup_Gallery/image_25.png", text: "" },
+    { image: "/Prenup_Gallery/image_26.png", text: "" },
+    { image: "/Prenup_Gallery/image_27.png", text: "" },
+    { image: "/Prenup_Gallery/image_28.png", text: "" },
+    { image: "/Prenup_Gallery/image_29.png", text: "" },
+    { image: "/Prenup_Gallery/image_30.png", text: "" },
+    { image: "/Prenup_Gallery/image_31.png", text: "" },
+    { image: "/Prenup_Gallery/image_32.png", text: "" },
+    { image: "/Prenup_Gallery/image_33.png", text: "" },
+    { image: "/Prenup_Gallery/image_34.png", text: "" },
+    { image: "/Prenup_Gallery/image_35.png", text: "" },
+    { image: "/Prenup_Gallery/image_36.png", text: "" },
+    { image: "/Prenup_Gallery/image_37.png", text: "" },
+    { image: "/Prenup_Gallery/image_38.png", text: "" },
+    { image: "/Prenup_Gallery/image_39.png", text: "" },
+    { image: "/Prenup_Gallery/image_40.png", text: "" },
+    { image: "/Prenup_Gallery/image_41.png", text: "" },
+    { image: "/Prenup_Gallery/image_42.png", text: "" },
+  ]
+
   // Wedding date - December 10, 2025 at 4:00 PM Philippines time (UTC+8)
   const weddingDate = new Date("2025-12-10T16:00:00+08:00")
 
@@ -181,7 +226,7 @@ export default function WeddingInvitation() {
                   {/* Main Image Container */}
                   <div className="relative w-full aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-beige/20 to-gold/20 backdrop-blur-sm border border-gold/20">
                     <Image
-                      src="/couple_image/image_3.png"
+                      src="/couple_image/image_5.png"
                       alt="Jackey and Jan - Beautiful couple portrait"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -283,7 +328,7 @@ export default function WeddingInvitation() {
                   {/* Main Image Container */}
                   <div className="relative w-[26rem] h-[34rem] xl:w-[30rem] xl:h-[38rem] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-beige/20 to-gold/20 backdrop-blur-sm border border-gold/20">
                     <Image
-                      src="/couple_image/image_1.png"
+                      src="/couple_image/image_6.png"
                       alt="Jackey and Jan - Beautiful couple portrait"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -520,17 +565,14 @@ export default function WeddingInvitation() {
         </section>
 
         {/* Prenup Section */}
-        {/* Prenup Section - Mobile Optimized & July Timeline */}
+        {/* Prenup Section - Live Gallery */}
         <section id="prenup" className="py-24 bg-white/80 backdrop-blur-sm">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <Badge variant="outline" className="border-gold text-burgundy mb-4">
-                Coming Soon
-              </Badge>
+              <Badge variant="outline" className="border-gold text-burgundy mb-4">Now Live</Badge>
               <h2 className="font-serif text-4xl md:text-6xl text-burgundy mb-6">Prenup Gallery</h2>
               <p className="text-wine/80 text-xl max-w-2xl mx-auto leading-relaxed">
-                Our prenup photoshoot is scheduled for July 2025. Check back later to see our beautiful moments
-                captured.
+                Enjoy highlights from our prenup shoot. Drag to browse the interactive reel.
               </p>
             </div>
 
@@ -544,58 +586,12 @@ export default function WeddingInvitation() {
                 }}
               >
                 <CircularGallery
+                  items={prenupGalleryItems}
                   bend={isMobile ? 2 : 3}
                   textColor="#ffffff"
                   borderRadius={0.05}
                   font={isMobile ? "bold 18px serif" : "bold 24px serif"}
                 />
-
-                {/* Coming Soon Overlay - Mobile Responsive */}
-                <div className="absolute inset-0 bg-burgundy/80 backdrop-blur-md flex items-center justify-center z-10 rounded-xl">
-                  <div className="text-center p-4 md:p-8 max-w-md mx-auto">
-                    <motion.div
-                      initial={{ scale: 0.8, opacity: 0 }}
-                      whileInView={{ scale: 1, opacity: 1 }}
-                      transition={{ duration: 0.6 }}
-                      viewport={{ once: true }}
-                      className="w-16 h-16 md:w-20 md:h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-xl"
-                    >
-                      <Camera className="h-8 w-8 md:h-10 md:w-10 text-gold" />
-                    </motion.div>
-
-                    <motion.h3
-                      initial={{ y: 20, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.6, delay: 0.2 }}
-                      viewport={{ once: true }}
-                      className="text-2xl md:text-3xl font-serif text-white mb-3 md:mb-4"
-                    >
-                      Prenup Gallery Coming Soon
-                    </motion.h3>
-
-                    <motion.p
-                      initial={{ y: 20, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.6, delay: 0.4 }}
-                      viewport={{ once: true }}
-                      className="text-gold text-base md:text-lg mb-4 md:mb-6 leading-relaxed"
-                    >
-                      Our beautiful prenup photos will be available here after the photoshoot. We can't wait to share
-                      these special moments with you!
-                    </motion.p>
-
-                    <motion.div
-                      initial={{ y: 20, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.6, delay: 0.6 }}
-                      viewport={{ once: true }}
-                      className="flex items-center justify-center space-x-2 text-white/70 text-sm md:text-base"
-                    >
-                      <Calendar className="h-4 w-4 md:h-5 md:w-5" />
-                      <span>Expected: July 2025</span>
-                    </motion.div>
-                  </div>
-                </div>
               </div>
 
               {/* Gallery Instructions - Mobile Responsive */}
@@ -607,8 +603,7 @@ export default function WeddingInvitation() {
                 className="mt-6 md:mt-8 text-center"
               >
                 <p className="text-wine/60 text-xs md:text-sm leading-relaxed max-w-2xl mx-auto">
-                  💡 Tip: Once available, you'll be able to drag and scroll through our prenup photos in this
-                  interactive 3D gallery. The gallery is optimized for both desktop and mobile viewing.
+                  💡 Tip: Drag or scroll horizontally to explore. Optimized for desktop and mobile.
                 </p>
               </motion.div>
             </div>

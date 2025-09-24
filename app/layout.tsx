@@ -10,7 +10,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'], variable: '--font
 
 export const metadata: Metadata = {
   title: 'Jackey & Jan - Wedding Invitation',
-  description: 'Join us in celebrating the wedding of Jackey & Jan on December 10, 2025 at Nature\'s Village Resort, Bacolod City. RSVP now to be part of our special day.',
+  description: "You're invited to celebrate the wedding of Jackey & Jan on December 10, 2025 at Nature's Village Resort, Bacolod City. View details, our story, gallery, and RSVP to be part of our special day.",
   keywords: 'wedding, invitation, Jackey Jan, Bacolod wedding, Nature\'s Village Resort, December 2025 wedding',
   authors: [{ name: 'Jackey & Jan' }],
   creator: 'Jackey & Jan',
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
   manifest: '/favicon_io/site.webmanifest',
   openGraph: {
     title: 'Jackey & Jan - Wedding Invitation',
-    description: 'Join us in celebrating the wedding of Jackey & Jan on December 10, 2025 at Nature\'s Village Resort, Bacolod City.',
+    description: "You're invited to celebrate the wedding of Jackey & Jan on December 10, 2025 at Nature's Village Resort, Bacolod City. View details, our story, gallery, and RSVP to be part of our special day.",
     url: 'https://jackandjan.com',
     siteName: 'Jackey & Jan Wedding',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/couple_image/image_3.png',
+        url: '/couple_image/image_5.png',
         width: 1200,
         height: 630,
         alt: 'Jackey & Jan Wedding Invitation',
@@ -62,8 +62,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jackey & Jan - Wedding Invitation',
-    description: 'Join us in celebrating the wedding of Jackey & Jan on December 10, 2025 at Nature\'s Village Resort, Bacolod City.',
-    images: ['/couple_image/image_3.png'],
+    description: "You're invited to celebrate the wedding of Jackey & Jan on December 10, 2025 at Nature's Village Resort, Bacolod City. View details, our story, gallery, and RSVP to be part of our special day.",
+    images: ['/couple_image/image_5.png'],
     creator: '@jackandjan',
   },
   robots: {
