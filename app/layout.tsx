@@ -10,19 +10,24 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'], variable: '--font
 
 export const metadata: Metadata = {
   title: 'Jackey & Jan - Wedding Invitation',
-  description: "You're invited to celebrate the wedding of Jackey & Jan on December 10, 2025 at Nature's Village Resort, Bacolod City. View details, our story, gallery, and RSVP to be part of our special day.",
-  keywords: 'wedding, invitation, Jackey Jan, Bacolod wedding, Nature\'s Village Resort, December 2025 wedding',
-  authors: [{ name: 'Jackey & Jan' }],
+  description:
+    "You're invited to the wedding of Jackey and Jan! Join us on December 10, 2025, at Nature's Village Resort, Bacolod City. RSVP, read our love story, view our gallery, and leave a message for the couple.",
+  keywords:
+    "Jackey Jan wedding, Bacolod wedding, Nature's Village Resort, Filipino wedding, RSVP, wedding gallery, wedding message wall, wedding invitation, 2025 weddings, love story, guestbook, wedding registry, wedding details, wedding venues Philippines, #TheJackAndJanWedding",
+  authors: [
+    { name: 'Jackey' },
+    { name: 'Jan' },
+  ],
   creator: 'Jackey & Jan',
   publisher: 'Jackey & Jan',
   formatDetection: {
     email: false,
     address: false,
-    telephone: false,
+    telephone: true,
   },
-  metadataBase: new URL('https://jackandjan.com'),
+  metadataBase: new URL('https://jacky-and-jan-wedding-invitation.vercel.app'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://jacky-and-jan-wedding-invitation.vercel.app/',
   },
   icons: {
     icon: [
@@ -44,26 +49,28 @@ export const metadata: Metadata = {
   },
   manifest: '/favicon_io/site.webmanifest',
   openGraph: {
-    title: 'Jackey & Jan - Wedding Invitation',
-    description: "You're invited to celebrate the wedding of Jackey & Jan on December 10, 2025 at Nature's Village Resort, Bacolod City. View details, our story, gallery, and RSVP to be part of our special day.",
-    url: 'https://jackandjan.com',
+    title: 'Jackey & Jan Wedding | December 10, 2025 | Bacolod',
+    description:
+      "Celebrate the union of Jackey and Jan on December 10, 2025, in Bacolod City, Philippines. Discover our love story, RSVP, view the gallery, and leave your wishes!",
+    url: 'https://jacky-and-jan-wedding-invitation.vercel.app/',
     siteName: 'Jackey & Jan Wedding',
-    locale: 'en_US',
+    locale: 'en_PH',
     type: 'website',
     images: [
       {
-        url: '/couple_image/image_5.png',
+        url: 'https://jacky-and-jan-wedding-invitation.vercel.app/couple_image/image_5.png',
         width: 1200,
         height: 630,
-        alt: 'Jackey & Jan Wedding Invitation',
+        alt: 'Jackey & Jan Wedding Invitation - December 10, 2025, Bacolod',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jackey & Jan - Wedding Invitation',
-    description: "You're invited to celebrate the wedding of Jackey & Jan on December 10, 2025 at Nature's Village Resort, Bacolod City. View details, our story, gallery, and RSVP to be part of our special day.",
-    images: ['/couple_image/image_5.png'],
+    title: 'Jackey & Jan Wedding Invitation',
+    description:
+      "You're invited to the wedding of Jackey and Jan! December 10, 2025, Bacolod City, Philippines. RSVP, view our gallery, and leave a message! #TheJackAndJanWedding",
+    images: ['https://jacky-and-jan-wedding-invitation.vercel.app/couple_image/image_5.png'],
     creator: '@jackandjan',
   },
   robots: {
@@ -79,6 +86,46 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-site-verification',
+  },
+  other: {
+    'application/ld+json': JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Event',
+      name: 'Jackey & Jan Wedding',
+      startDate: '2025-12-10T16:00:00+08:00',
+      endDate: '2025-12-10T22:00:00+08:00',
+      eventStatus: 'https://schema.org/EventScheduled',
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      location: [
+        {
+          '@type': 'Place',
+          name: "Nature's Village Resort",
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Talisay Highway',
+            addressLocality: 'Metro Bacolod',
+            postalCode: '6115',
+            addressRegion: 'Negros Occidental',
+            addressCountry: 'PH',
+          },
+        },
+      ],
+      image: ['https://jacky-and-jan-wedding-invitation.vercel.app/couple_image/image_5.png'],
+      description:
+        "You're invited to the wedding of Jackey and Jan! Join us on December 10, 2025, at Nature's Village Resort, Bacolod City. RSVP, read our love story, view our gallery, and leave a message for the couple.",
+      organizer: {
+        '@type': 'Person',
+        name: 'Jackey & Jan',
+      },
+      offers: {
+        '@type': 'Offer',
+        url: 'https://jacky-and-jan-wedding-invitation.vercel.app/',
+        availability: 'https://schema.org/InStock',
+        price: '0',
+        priceCurrency: 'PHP',
+      },
+      eventHashtag: '#TheJackAndJanWedding',
+    }),
   },
 }
 
