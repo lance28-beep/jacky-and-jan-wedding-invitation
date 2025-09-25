@@ -446,55 +446,7 @@ export default function WeddingInvitation() {
             </div>
 
             <div className="max-w-6xl mx-auto">
-              {/* Interactive Stack Component - Now Featured First */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="flex justify-center mb-16 lg:mb-20"
-              >
-                <div className="relative">
-                  {/* Decorative background for the stack */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-burgundy/5 to-wine/5 rounded-3xl blur-3xl scale-110"></div>
-                  <div className="relative bg-white/30 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-gold/20">
-                    <div className="text-center mb-8">
-                      <h3 className="font-serif text-2xl md:text-3xl text-burgundy mb-4">Our Journey in Pictures</h3>
-                      <p className="text-wine/70 text-lg">Drag and interact with our memories</p>
-                    </div>
-                    <Stack
-                      randomRotation={true}
-                      sensitivity={180}
-                      sendToBackOnClick={false}
-                      cardDimensions={{ width: 300, height: 300 }}
-                      cardsData={[
-                        {
-                          id: 1,
-                          img: "/couple_image/image_4.png",
-                        },
-                        {
-                          id: 2,
-                          img: "/couple_image/image_1.png",
-                        },
-                        {
-                          id: 3,
-                          img: "/couple_image/image_3.png",
-                        },
-                        {
-                          id: 4,
-                          img: "/couple_image/image_2.png",
-                        },
-                      ]}
-                    />
-                    {/* Interactive hint */}
-                    <div className="text-center mt-6">
-                      <p className="text-sm text-wine/60 italic">💡 Drag the photos to explore our memories</p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Story Content - Now Below the Interactive Element */}
+              {/* Story Content */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -514,7 +466,7 @@ export default function WeddingInvitation() {
 
                       <p className="mb-6 text-lg">Welcome, dear friends and family!</p>
 
-                      <p className="mb-6 text-lg">
+                      <p className="mb-6 text-lg first-letter:text-5xl first-letter:font-serif first-letter:text-burgundy first-letter:mr-2 first-letter:float-left">
                         Our love story began on an unexpected night, where two paths crossed thanks to our mutual
                         friends. I still remember the first time I laid eyes on Jan — we may have started off on the
                         wrong foot, but that didn't stop us from diving into conversation and discovering an instant
@@ -529,6 +481,12 @@ export default function WeddingInvitation() {
                         cooking together, finding joy in every moment, even amidst the struggles of living paycheck to
                         paycheck.
                       </p>
+
+                      <div className="my-10 px-6 py-6 bg-gradient-to-r from-burgundy/5 to-wine/5 border border-gold/20 rounded-2xl shadow-sm">
+                        <p className="text-center italic text-burgundy text-xl md:text-2xl font-serif">
+                          “Through highs and lows, our love chose to stay.”
+                        </p>
+                      </div>
 
                       <p className="mb-6 text-lg">
                         Like any couple, we've faced our share of challenges, including the heartbreaking loss of our
@@ -939,7 +897,7 @@ export default function WeddingInvitation() {
                         <h4 className="font-semibold text-burgundy text-base">Innah Nepomuceno Piorque</h4>
                         <p className="text-wine/70 text-sm">Maid of Honor</p>
                         </div>
-                      {["Kathleen Faye Balo", "Hazel Ruth Abraham"].map((name, idx) => (
+                      {["Kathleen Faye Balo", "Hazel Ruth Abraham","Jetson Perez","Jhustine Mendoza"].map((name, idx) => (
                         <div key={idx} className="flex flex-col items-center">
                           <div className="w-14 h-14 bg-gradient-to-br from-burgundy to-wine rounded-full flex items-center justify-center mb-3">
                             <span className="text-white font-serif text-lg">{name.split(" ").map((n) => n[0]).join("")}</span>
@@ -981,7 +939,7 @@ export default function WeddingInvitation() {
               <div>
                 <h3 className="font-serif text-2xl text-burgundy mb-8 text-center">Principal Sponsors</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                  {["Jeanie Velayo", "Teresa Nepomuceno", "Engr. Joenil Lavadia", "Femy Delator", "Tara Talafer", "Ariel Amedo", "Gemma De los Santos", "Dra. Gladys Pailano Tan", "Marivic Dormido", "Bryan Amaporado", "Lynee Penaflor", "Engr. Leo Pahilanga", "Rene Pailano", "Julie Peruelo", "Sampaguita Repique", "Margarita Gonschorek", "Daisy Carmona", "Edwin Escanuela", "Connie Franco Gallego", "Bonifacio Alvarez Jr.", "Engr. Jeffrey Alvarez"].map((name, idx) => (
+                  {["Jeanie Velayo", "Teresa Nepomuceno", "Engr. Joenil Lavadia", "Femy Delator", "Tara Talafer", "Ariel Amedo", "Gemma De los Santos", "Dra. Gladys Pailano Tan", "Marivic Dormido", "Bryan Amaporado", "Lynee Penaflor", "Engr. Leo Pahilanga", "Rene Pailano", "Julie Peruelo", "Sampaguita Repique", "Margarita Gonschorek", "Daisy Carmona", "Edwin Escanuela", "Connie Franco Gallego", "Bonifacio Alvarez Jr.", "Engr. Jeffrey Alvarez","Elvie Ermac Robertson","Judith Alvarez Callaghan"].map((name, idx) => (
                     <div key={idx} className="flex flex-col items-center bg-white/90 rounded-xl border border-gold/20 shadow hover:shadow-lg transition-all duration-200 py-4 px-2">
                       <div className="w-10 h-10 bg-gradient-to-br from-gold to-beige rounded-full flex items-center justify-center mb-2">
                         <span className="text-burgundy font-serif text-xs">{name.split(" ").map((n) => n[0]).join("")}</span>
@@ -1004,6 +962,7 @@ export default function WeddingInvitation() {
                           <p className="text-wine">Aria Francheska Dela Torre</p>
                           <p className="text-wine">Michaella Ysabelle Abraham</p>
                           <p className="text-wine">Jenine Alvarez</p>
+                          <p className="text-wine">Eliyanah Jayne Escanuela</p>
                         </div>
                       </div>
                     </CardContent>
