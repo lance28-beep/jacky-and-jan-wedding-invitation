@@ -921,7 +921,7 @@ export default function WeddingInvitation() {
                         <h4 className="font-semibold text-burgundy text-base">Frank Niel Alabarta</h4>
                         <p className="text-wine/70 text-sm">Best Man</p>
                 </div>
-                      {["Lariel Aynaga", "Nelsen John Pudadera", "Christian Bernard Dormido", "Ace Mark Hechanova", "Ariel Remegio Jr.", "Mhiko Catacata", "Janro Pahilangga", "Daniel Charles Velayo","Daniel Pahilanga”"].map((name, idx) => (
+                      {["Lariel Aynaga", "Nelsen John Pudadera", "Christian Bernard Dormido", "Ace Mark Hechanova", "Ariel Remegio Jr.", "Mhiko Catacata", "John Ro Pahilanga", "Daniel Charles Velayo","Daniel Hassan Pahilanga"].map((name, idx) => (
                         <div key={idx} className="flex flex-col items-center">
                           <div className="w-14 h-14 bg-gradient-to-br from-burgundy to-wine rounded-full flex items-center justify-center mb-3">
                             <span className="text-white font-serif text-lg">{name.split(" ").map((n) => n[0]).join("")}</span>
@@ -939,7 +939,7 @@ export default function WeddingInvitation() {
               <div>
                 <h3 className="font-serif text-2xl text-burgundy mb-8 text-center">Principal Sponsors</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                  {["Jeanie Velayo", "Teresa Nepomuceno", "Engr. Joenil Lavadia", "Femy Delator", "Tara Talafer", "Ariel Amedo", "Gemma De los Santos", "Dra. Gladys Pailano Tan", "Marivic Dormido", "Bryan Amaporado", "Lynee Penaflor", "Engr. Leo Pahilanga", "Rene Pailano", "Julie Peruelo", "Sampaguita Repique", "Margarita Gonschorek", "Daisy Carmona", "Edwin Escanuela", "Connie Franco Gallego", "Bonifacio Alvarez Jr.", "Engr. Jeffrey Alvarez","Elvie Ermac Robertson","Judith Alvarez Callaghan"].map((name, idx) => (
+                  {["Jeanie Velayo", "Teresa Nepomuceno", "Engr. Joenil Lavadia", "Femy Delator", "Tara Talafer", "Ariel Amedo", "Gemma De los Santos", "Dra. Gladys Pailano Tan", "Marivic Dormido", "Bryan Amador", "Lynee Penaflor", "Engr. Leo Pahilanga", "Rene Pailano", "Julie Peruelo", "Sampaguita Repique", "Margarita Gonschorek", "Daisy Carmona", "Edwin Escanuela", "Connie Franco Gallego", "Bonifacio Alvarez Jr.", "Engr. Jeffrey Alvarez","Elvie Ermac Robertson","Judith Alvarez Callaghan"].map((name, idx) => (
                     <div key={idx} className="flex flex-col items-center bg-white/90 rounded-xl border border-gold/20 shadow hover:shadow-lg transition-all duration-200 py-4 px-2">
                       <div className="w-10 h-10 bg-gradient-to-br from-gold to-beige rounded-full flex items-center justify-center mb-2">
                         <span className="text-burgundy font-serif text-xs">{name.split(" ").map((n) => n[0]).join("")}</span>
@@ -961,8 +961,9 @@ export default function WeddingInvitation() {
                         <div className="space-y-2">
                           <p className="text-wine">Aria Francheska Dela Torre</p>
                           <p className="text-wine">Michaella Ysabelle Abraham</p>
-                          <p className="text-wine">Jenine Alvarez</p>
+                          <p className="text-wine">Jeanin Hope Alvarez</p>
                           <p className="text-wine">Eliyanah Jayne Escanuela</p>
+                          <p className="text-wine">Jeany Grace Alvarez</p>
                         </div>
                       </div>
                     </CardContent>
@@ -972,7 +973,7 @@ export default function WeddingInvitation() {
                     <CardContent className="pt-6">
                       <div className="text-center">
                         <h4 className="font-semibold text-burgundy mb-3">Ring Bearer</h4>
-                        <p className="text-wine">Luke Andrei Realubit</p>
+                        <p className="text-wine">Luke Andrei Dormido</p>
 
                         <h4 className="font-semibold text-burgundy mb-3 mt-4">Bible Bearer</h4>
                         <p className="text-wine">Lawrence Aynaga</p>
